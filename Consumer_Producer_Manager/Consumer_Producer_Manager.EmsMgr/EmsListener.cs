@@ -20,10 +20,10 @@ namespace Consumer_Producer_Manager
         {
             _logger = log;
             _detailsEMS = detailsEMS;
-            this.Name = name;
+            Name = name;
             m_EmsManager = new EMSManager(detailsEMS.Url, detailsEMS.User, detailsEMS.Pass,
                 detailsEMS.Factory, detailsEMS.Transacted, detailsEMS.ClientAck,
-                detailsEMS.QueueName, detailsEMS.Count, clientID,this.Name, log);
+                detailsEMS.QueueName, detailsEMS.Count, clientID, Name, log);
         }
 
 
